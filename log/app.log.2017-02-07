@@ -1,0 +1,1037 @@
+[INFO] 2017-02-07 18:08:32,811 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:08:32,908 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:08:32,910 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:08:32,952 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:08:33,379 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:08:33,406 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:09:22,437 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:09:22,541 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:09:22,543 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:09:22,592 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:09:23,070 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:09:23,103 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:09:23,814 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:09:23,815 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:09:23,815 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:09:23,830 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:09:23,955 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:09:24,008 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:09:24,041 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4b296c3f [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@262ca8a9 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m79nkifyk02yf|3829ac1, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@de96ed7f [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m79nkifyk02yf|e077866, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m79nkifyk02yf|38be305c, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:09:24,314 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24fb6a80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-07 18:09:24,579 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:10:04,566 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:10:04,669 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:10:04,670 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:10:04,719 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:10:05,120 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:10:05,149 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:10:05,699 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:10:05,700 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:10:05,700 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:10:05,713 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:10:05,805 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:10:05,849 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:10:05,875 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@400579c5 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ba75d263 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m79ogtixoxr47|3829ac1, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@72e01739 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m79ogtixoxr47|e077866, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m79ogtixoxr47|38be305c, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:10:06,198 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24fb6a80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN] 2017-02-07 18:10:06,318 org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:524)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:470)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:429)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:245)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:110)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:445)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at br.com.zurcs.executor.business.crud.FabricaDeEntityManager.getEntityManager(FabricaDeEntityManager.java:36)
+	at br.com.zurcs.executor.main.MainApp.inicializaBancoDeDados(MainApp.java:134)
+	at br.com.zurcs.executor.main.MainApp.main(MainApp.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+Caused by: org.h2.jdbc.JdbcSQLException: Constraint "FKPJ8XQHQUXAFK3HKJUPNOMRKCP" already exists; SQL statement:
+alter table comando add constraint FKpj8xqhquxafk3hkjupnomrkcp foreign key (modulo_id) references modulo [90045-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:109)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+[INFO] 2017-02-07 18:10:06,643 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-07 18:10:06,653 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-07 18:10:06,654 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:11:20,816 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:11:20,932 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:11:20,934 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:11:20,990 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:11:21,428 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:11:21,462 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:11:22,187 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:11:22,188 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:11:22,188 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:11:22,206 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:11:22,332 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:11:22,396 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:11:22,442 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@3428626a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d8aaf789 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m79q3uhcdorfr|27a97e08, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ea3f7746 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m79q3uhcdorfr|e1e2e5e, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m79q3uhcdorfr|59c33386, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:11:22,828 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@37d871c2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN] 2017-02-07 18:11:22,955 org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:524)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:470)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:429)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:245)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:110)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:445)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at br.com.zurcs.executor.business.crud.FabricaDeEntityManager.getEntityManager(FabricaDeEntityManager.java:36)
+	at br.com.zurcs.executor.main.MainApp.inicializaBancoDeDados(MainApp.java:134)
+	at br.com.zurcs.executor.main.MainApp.main(MainApp.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+Caused by: org.h2.jdbc.JdbcSQLException: Constraint "FKPJ8XQHQUXAFK3HKJUPNOMRKCP" already exists; SQL statement:
+alter table comando add constraint FKpj8xqhquxafk3hkjupnomrkcp foreign key (modulo_id) references modulo [90045-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:109)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+[INFO] 2017-02-07 18:20:48,283 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:20:48,384 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:20:48,386 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:20:48,435 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:20:48,922 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:20:48,951 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:20:49,552 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:20:49,553 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:20:49,553 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:20:49,567 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:20:49,658 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:20:49,705 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:20:49,732 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6667c3ab [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@2f4fb3bd [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7a29mb1nbmy46|3829ac1, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e7b9f893 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7a29mb1nbmy46|e077866, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7a29mb1nbmy46|38be305c, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:20:50,095 com.mchange.v2.resourcepool.BasicResourcePool run - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5a2f3508 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:20:50,097 com.mchange.v2.resourcepool.BasicResourcePool run - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7a6c9082 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:20:50,099 com.mchange.v2.resourcepool.BasicResourcePool forceKillAcquires - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@3f28bd56 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:20:50,104 com.mchange.v2.resourcepool.BasicResourcePool forceKillAcquires - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@3f28bd56 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:20:50,106 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:20:50,106 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[INFO] 2017-02-07 18:21:00,343 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:21:00,437 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:21:00,438 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:21:00,477 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:21:00,961 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:21:01,001 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:21:01,584 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:21:01,584 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:21:01,585 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:21:01,597 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:21:01,689 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:21:01,731 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:21:01,754 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1bb3a34c [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3528dbfc [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7a2iwhxmnil4|3829ac1, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ed9320d2 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7a2iwhxmnil4|e077866, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7a2iwhxmnil4|38be305c, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:21:02,043 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24fb6a80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN] 2017-02-07 18:21:02,139 org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:524)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:470)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:429)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:245)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:110)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:445)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at br.com.zurcs.executor.business.crud.FabricaDeEntityManager.getEntityManager(FabricaDeEntityManager.java:36)
+	at br.com.zurcs.executor.main.MainApp.inicializaBancoDeDados(MainApp.java:134)
+	at br.com.zurcs.executor.main.MainApp.main(MainApp.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+Caused by: org.h2.jdbc.JdbcSQLException: Constraint "FKPJ8XQHQUXAFK3HKJUPNOMRKCP" already exists; SQL statement:
+alter table comando add constraint FKpj8xqhquxafk3hkjupnomrkcp foreign key (modulo_id) references modulo [90045-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:109)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+[INFO] 2017-02-07 18:21:02,605 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-07 18:21:02,607 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-07 18:21:02,608 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:21:19,435 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:21:19,561 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:21:19,563 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:21:19,618 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:21:20,097 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:21:20,135 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:21:20,808 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:21:20,809 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:21:20,809 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:21:20,829 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:21:20,959 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:21:21,025 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:21:21,081 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@492285b8 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d37194f3 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7a2xr01m014te|68fe48d7, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d0e41ef9 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7a2xr01m014te|7318daf8, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7a2xr01m014te|10acd6, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:21:21,468 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10f19647] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-07 18:22:54,906 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:22:54,999 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:22:55,001 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:22:55,042 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:22:55,491 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:22:55,534 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:22:56,212 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:22:56,212 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:22:56,213 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:22:56,227 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:22:56,336 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:22:56,384 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:22:56,429 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@fe001f09 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@23af749f [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7a4zcqdcp1kt|3829ac1, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dc19b975 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7a4zcqdcp1kt|e077866, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7a4zcqdcp1kt|38be305c, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:22:56,740 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24fb6a80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[WARN] 2017-02-07 18:22:56,854 org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:524)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:470)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:429)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:245)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:110)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:445)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:39)
+	at br.com.zurcs.executor.business.crud.FabricaDeEntityManager.getEntityManager(FabricaDeEntityManager.java:36)
+	at br.com.zurcs.executor.main.MainApp.inicializaBancoDeDados(MainApp.java:134)
+	at br.com.zurcs.executor.main.MainApp.main(MainApp.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+Caused by: org.h2.jdbc.JdbcSQLException: Constraint "FKPJ8XQHQUXAFK3HKJUPNOMRKCP" already exists; SQL statement:
+alter table comando add constraint FKpj8xqhquxafk3hkjupnomrkcp foreign key (modulo_id) references modulo [90045-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:109)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:77)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:75)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+[INFO] 2017-02-07 18:22:57,173 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-07 18:22:57,175 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-07 18:22:57,175 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:24:00,152 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:24:00,254 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:24:00,255 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:24:00,300 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:24:00,759 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:24:00,796 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:24:01,549 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:24:01,549 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:24:01,549 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:24:01,566 com.mchange.v2.log.MLog run - MLog clients using log4j logging.
+[INFO] 2017-02-07 18:24:01,671 com.mchange.v2.c3p0.C3P0Registry banner - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:24:01,720 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:24:01,750 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@fc5b23c0 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@f2157d08 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7a6drq1hlrynk|3829ac1, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@aa7fc1de [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7a6drq1hlrynk|e077866, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7a6drq1hlrynk|38be305c, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:24:02,017 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24fb6a80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-07 18:24:02,414 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-07 18:24:02,419 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-07 18:24:02,421 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:26:41,905 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:26:42,016 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:26:42,017 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:26:42,067 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:26:42,447 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:26:42,471 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:26:43,091 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:26:43,091 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:26:43,091 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:26:43,113 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:26:43,220 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:26:43,267 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:26:43,297 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@de066bea [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@aa5c7b8d [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7a9uf52ewxev|1c80e49b, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@62a6ce34 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7a9uf52ewxev|435871cb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7a9uf52ewxev|4f2613d1, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:26:43,673 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@730aef92 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:26:43,676 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:26:43,677 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@21f772 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:26:43,680 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:26:43,679 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:26:43,680 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[INFO] 2017-02-07 18:26:57,888 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:26:57,992 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:26:57,994 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:26:58,038 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:26:58,431 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:26:58,457 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:26:58,989 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:26:58,989 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:26:58,989 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:26:59,008 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:26:59,111 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:26:59,153 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:26:59,188 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e4a8b3b1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b0fec354 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7aa6oo1erd7wj|1c80e49b, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@694915fb [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7aa6oo1erd7wj|435871cb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7aa6oo1erd7wj|4f2613d1, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:26:59,503 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@274872f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-07 18:26:59,768 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-07 18:26:59,778 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-07 18:26:59,866 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 1 migration (execution time 00:00.048s)
+[INFO] 2017-02-07 18:26:59,909 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 1
+[INFO] 2017-02-07 18:26:59,910 org.flywaydb.core.internal.command.DbMigrate info - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] 2017-02-07 18:26:59,922 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-07 18:26:59,922 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-07 18:26:59,923 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:28:36,507 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:28:36,620 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:28:36,621 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:28:36,663 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:28:37,110 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:28:37,139 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:28:37,696 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:28:37,696 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:28:37,697 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:28:37,716 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:28:37,818 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:28:37,865 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:28:37,901 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@789eeae1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@44f4fa84 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7acauh1tje086|1c80e49b, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@fd3f4d2b [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7acauh1tje086|435871cb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7acauh1tje086|4f2613d1, numHelperThreads -> 3 ]
+[INFO] 2017-02-07 18:28:38,250 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@274872f8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-07 18:28:38,504 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-07 18:28:38,514 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-07 18:28:38,616 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 2 migrations (execution time 00:00.037s)
+[INFO] 2017-02-07 18:28:38,666 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 1
+[INFO] 2017-02-07 18:28:38,666 org.flywaydb.core.internal.command.DbMigrate info - Migrating schema "PUBLIC" to version 2 - carga modulos
+[INFO] 2017-02-07 18:28:38,684 org.flywaydb.core.internal.command.DbMigrate info - Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.036s).
+[INFO] 2017-02-07 18:28:38,722 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-07 18:28:38,722 FlywayIntegrator logMigrate - Tasks de migração: 2 : carga modulos arquivo : V2__carga_modulos.sql
+[INFO] 2017-02-07 18:28:38,723 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-07 18:28:38,725 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  
+[INFO] 2017-02-07 18:30:05,877 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:30:06,003 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:30:06,005 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:30:06,057 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:30:06,591 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:30:06,650 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:30:07,484 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:30:07,485 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:30:07,485 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:30:07,513 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:30:07,640 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:30:07,741 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:30:07,782 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e6beb7aa [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d14765a6 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7ae8541lmsbr2|3c782d8e, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f95a02fc [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7ae8541lmsbr2|69e05f61, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7ae8541lmsbr2|3fbcfe81, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:30:08,248 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3773e6ea -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:30:08,252 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@76ddd61a is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:30:08,255 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5a0cc196 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:30:08,260 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@76ddd61a is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:30:08,257 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:30:08,260 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[INFO] 2017-02-07 18:30:34,319 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:30:34,411 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:30:34,413 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:30:34,451 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:30:34,841 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:30:34,870 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:30:35,424 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:30:35,425 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:30:35,425 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:30:35,449 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:30:35,542 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:30:35,585 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:30:35,611 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4617b164 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@126dc107 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7aetot8n1ut0|1c80e49b, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@cab813ae [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7aetot8n1ut0|435871cb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7aetot8n1ut0|4f2613d1, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:30:35,974 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4030590a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:30:35,976 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1194e48b -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:30:35,981 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:30:35,984 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:30:35,986 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:30:35,987 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[INFO] 2017-02-07 18:31:05,493 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:31:05,631 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:31:05,633 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:31:05,693 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:31:06,240 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:31:06,281 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:31:07,152 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:31:07,152 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:31:07,152 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:31:07,183 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:31:07,323 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:31:07,384 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:31:07,433 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@ed50226c [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@9c4b50f3 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7afi6xhugiy4|20411320, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@a3925f7 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7afi6xhugiy4|71f96dfb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7afi6xhugiy4|5fb65013, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:31:07,834 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@604cf667 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:31:07,841 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2e53b094 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:31:07,835 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3fbe40a2 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:31:07,845 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:31:07,849 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[WARN] 2017-02-07 18:31:07,849 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@2e53b094 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[INFO] 2017-02-07 18:41:26,722 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:41:26,827 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:41:26,829 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:41:26,880 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:41:27,358 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:41:27,391 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:41:28,039 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:41:28,040 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:41:28,040 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:41:28,064 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:41:28,176 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:41:28,221 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:41:28,256 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@74e41ab1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@413a2a54 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7ast94633j29|1c80e49b, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f9847cfb [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7ast94633j29|435871cb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7ast94633j29|4f2613d1, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:41:28,658 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@69f934d5 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:41:28,662 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:41:28,664 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@21f772 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:41:28,665 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:41:28,671 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[WARN] 2017-02-07 18:41:28,673 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[INFO] 2017-02-07 18:41:54,488 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-07 18:41:54,591 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-07 18:41:54,592 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-07 18:41:54,633 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-07 18:41:55,042 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-07 18:41:55,073 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-07 18:41:55,754 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-07 18:41:55,754 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-07 18:41:55,755 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-07 18:41:55,778 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-07 18:41:55,890 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-07 18:41:55,938 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-07 18:41:55,972 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@120d6f09 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@de637eac [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m7atemz1g7xw38|1c80e49b, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@96add153 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m7atemz1g7xw38|435871cb, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m7atemz1g7xw38|4f2613d1, numHelperThreads -> 3 ]
+[WARN] 2017-02-07 18:41:56,363 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@704ead11 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:41:56,369 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-07 18:41:56,367 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4bb48600 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-ambiente-cs/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-07 18:41:56,375 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-07 18:41:56,376 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[WARN] 2017-02-07 18:41:56,377 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@32f0fba8 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[INFO] 2017-02-07 18:41:56,387 br.com.zurcs.executor.main.InitHelper printInit - 
+    ______   _ ____   ____ ____    _____                    ____ ____   
+   |__  / | | |  _ \ / ___/ ___|  | ____|_  _____  ___     / ___/ ___|  
+     / /| | | | |_) | |   \___ \  |  _| \ \/ / _ \/ __|   | |   \___ \  
+    / /_| |_| |  _ <| |___ ___) | | |___ >  <  __/ (__ _  | |___ ___) | 
+   /____|\___/|_| \_\\____|____/  |_____/_/\_\___|\___(_)  \____|____/  

@@ -1,0 +1,330 @@
+[INFO] 2017-02-09 08:50:07,074 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-09 08:50:07,400 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-09 08:50:07,401 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-09 08:50:07,583 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-09 08:50:08,419 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-09 08:50:08,488 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-09 08:50:09,450 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-09 08:50:09,451 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-09 08:50:09,451 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-09 08:50:09,547 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-09 08:50:09,714 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-09 08:50:09,794 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-09 08:50:09,833 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@77a74865 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@12ed9528 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m9kk36zy0g59u|51d9b06c, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@d0c30d9c [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m9kk36zy0g59u|4f966719, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m9kk36zy0g59u|12ffd1de, numHelperThreads -> 3 ]
+[INFO] 2017-02-09 08:50:10,284 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44a6a68e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-09 08:50:10,403 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService - HHH000397: Using ASTQueryTranslatorFactory
+[INFO] 2017-02-09 08:50:10,797 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-09 08:50:10,813 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-09 08:50:10,892 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 2 migrations (execution time 00:00.041s)
+[INFO] 2017-02-09 08:50:10,938 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 2
+[INFO] 2017-02-09 08:50:10,941 org.flywaydb.core.internal.command.DbMigrate info - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] 2017-02-09 08:50:10,974 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-09 08:50:10,975 FlywayIntegrator logMigrate - Tasks de migração: 2 : carga modulos arquivo : V2__carga_modulos.sql
+[INFO] 2017-02-09 08:50:10,976 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-09 08:50:10,976 br.com.zurcs.executor.main.InitHelper printInit - 
+      _______  _______ ____ _   _ _____ ___  ____     ____ __  __ ____          _____                _ ____    
+     | ____\ \/ / ____/ ___| | | |_   _/ _ \|  _ \   / ___|  \/  |  _ \        |__  /   _ _ __ ___  ( ) ___|   
+     |  _|  \  /|  _|| |   | | | | | || | | | |_) | | |   | |\/| | | | |_____    / / | | | '__/ __| |/\___ \   
+     | |___ /  \| |__| |___| |_| | | || |_| |  _ <  | |___| |  | | |_| |_____|  / /| |_| | | | (__     ___) |  
+     |_____/_/\_\_____\____|\___/  |_| \___/|_| \_\  \____|_|  |_|____/        /____\__,_|_|  \___|   |____/   
+[DEBUG] 2017-02-09 08:50:12,578 br.com.zurcs.executor.business.ModuloManagerBean buscarTodos - Buscando todas entidades [br.com.zurcs.executor.persistencia.entidades.Modulo]
+[DEBUG] 2017-02-09 08:50:12,579 br.com.zurcs.executor.business.ModuloManagerBean getHqlParaBuscaEntidade - Hql de busca entidade: [select x from br.com.zurcs.executor.persistencia.entidades.Modulo x  order by nome]
+[DEBUG] 2017-02-09 08:50:14,031 br.com.zurcs.executor.business.ComandoManagerBean buscarPorQueryNomeada - Buscando entidades por Query Nomeada, Nome Query: [br.com.zurcs.executor.business.ComandoManagerBean.buscarPorModulo] - QueryParameter={idModulo=3}
+[INFO] 2017-02-09 08:50:22,157 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 08:50:25,227 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 08:50:38,251 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 11 Seconds
+[INFO] 2017-02-09 09:02:09,704 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-09 09:02:09,851 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-09 09:02:09,853 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-09 09:02:09,904 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-09 09:02:10,576 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-09 09:02:10,604 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-09 09:02:11,568 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-09 09:02:11,568 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-09 09:02:11,569 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-09 09:02:11,618 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-09 09:02:11,902 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-09 09:02:11,966 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-09 09:02:12,027 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@68134d10 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b3d4e1f6 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m9kzkdy1n3zkp4|1de5f0ef, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@82ced7f2 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m9kzkdy1n3zkp4|5827af16, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m9kzkdy1n3zkp4|73c60324, numHelperThreads -> 3 ]
+[INFO] 2017-02-09 09:02:12,568 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@165b8a71] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-09 09:02:12,885 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService - HHH000397: Using ASTQueryTranslatorFactory
+[INFO] 2017-02-09 09:02:13,301 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-09 09:02:13,313 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-09 09:02:13,477 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 2 migrations (execution time 00:00.070s)
+[INFO] 2017-02-09 09:02:13,547 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 2
+[INFO] 2017-02-09 09:02:13,568 org.flywaydb.core.internal.command.DbMigrate info - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] 2017-02-09 09:02:13,624 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-09 09:02:13,624 FlywayIntegrator logMigrate - Tasks de migração: 2 : carga modulos arquivo : V2__carga_modulos.sql
+[INFO] 2017-02-09 09:02:13,624 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-09 09:02:13,625 br.com.zurcs.executor.main.InitHelper printInit - 
+      _______  _______ ____ _   _ _____ ___  ____     ____ __  __ ____          _____                _ ____    
+     | ____\ \/ / ____/ ___| | | |_   _/ _ \|  _ \   / ___|  \/  |  _ \        |__  /   _ _ __ ___  ( ) ___|   
+     |  _|  \  /|  _|| |   | | | | | || | | | |_) | | |   | |\/| | | | |_____    / / | | | '__/ __| |/\___ \   
+     | |___ /  \| |__| |___| |_| | | || |_| |  _ <  | |___| |  | | |_| |_____|  / /| |_| | | | (__     ___) |  
+     |_____/_/\_\_____\____|\___/  |_| \___/|_| \_\  \____|_|  |_|____/        /____\__,_|_|  \___|   |____/   
+[DEBUG] 2017-02-09 09:02:14,881 br.com.zurcs.executor.business.ModuloManagerBean buscarTodos - Buscando todas entidades [br.com.zurcs.executor.persistencia.entidades.Modulo]
+[DEBUG] 2017-02-09 09:02:14,881 br.com.zurcs.executor.business.ModuloManagerBean getHqlParaBuscaEntidade - Hql de busca entidade: [select x from br.com.zurcs.executor.persistencia.entidades.Modulo x  order by nome]
+[DEBUG] 2017-02-09 09:02:17,179 br.com.zurcs.executor.business.ComandoManagerBean buscarPorQueryNomeada - Buscando entidades por Query Nomeada, Nome Query: [br.com.zurcs.executor.business.ComandoManagerBean.buscarPorModulo] - QueryParameter={idModulo=3}
+[INFO] 2017-02-09 09:02:22,760 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:02:22,761 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:02:23,101 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:02:24,384 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:02:24,384 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:02:24,518 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:02:25,796 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:02:25,796 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:02:25,955 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:03:05,333 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-09 09:03:05,450 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-09 09:03:05,452 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-09 09:03:05,503 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-09 09:03:05,973 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-09 09:03:06,001 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-09 09:03:06,558 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-09 09:03:06,559 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-09 09:03:06,559 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-09 09:03:06,584 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-09 09:03:06,690 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-09 09:03:06,762 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-09 09:03:06,858 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@a38c32f1 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@28436db1 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m9l0qr4czns60|2e54db99, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ca785bf4 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m9l0qr4czns60|12bfd80d, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m9l0qr4czns60|277f7dd3, numHelperThreads -> 3 ]
+[WARN] 2017-02-09 09:03:07,398 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@16e11e9 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-comandos/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-09 09:03:07,402 com.mchange.v2.resourcepool.BasicResourcePool log - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@56c64c56 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine$Store.convertIllegalStateException(MVTableEngine.java:187)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:167)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2468)
+	at org.h2.engine.Database.open(Database.java:695)
+	at org.h2.engine.Database.openDatabase(Database.java:273)
+	at org.h2.engine.Database.<init>(Database.java:267)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/desenvolvimento/java/workspaces/rodolfocruz/utilitarios/executor-comandos/database/executor.mv.db [1.4.193/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:765)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:348)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2923)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	... 23 more
+[WARN] 2017-02-09 09:03:07,409 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@305f031 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-09 09:03:07,413 com.mchange.v2.resourcepool.BasicResourcePool log - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@305f031 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+[WARN] 2017-02-09 09:03:07,415 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - SQL Error: 0, SQLState: null
+[ERROR] 2017-02-09 09:03:07,416 org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions - Connections could not be acquired from the underlying database!
+[INFO] 2017-02-09 09:03:25,659 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-09 09:03:25,759 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-09 09:03:25,760 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-09 09:03:25,805 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-09 09:03:26,191 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-09 09:03:26,219 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-09 09:03:26,744 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-09 09:03:26,744 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-09 09:03:26,744 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-09 09:03:26,764 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-09 09:03:26,862 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-09 09:03:26,906 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-09 09:03:26,932 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2b131326 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@afca4de6 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m9l16bl16xc4ux|2e54db99, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@51ff3c29 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m9l16bl16xc4ux|12bfd80d, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m9l16bl16xc4ux|277f7dd3, numHelperThreads -> 3 ]
+[INFO] 2017-02-09 09:03:27,197 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ebea12c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-09 09:03:27,310 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService - HHH000397: Using ASTQueryTranslatorFactory
+[INFO] 2017-02-09 09:03:27,629 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-09 09:03:27,641 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-09 09:03:27,724 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 2 migrations (execution time 00:00.025s)
+[INFO] 2017-02-09 09:03:27,746 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 2
+[INFO] 2017-02-09 09:03:27,747 org.flywaydb.core.internal.command.DbMigrate info - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] 2017-02-09 09:03:27,758 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-09 09:03:27,758 FlywayIntegrator logMigrate - Tasks de migração: 2 : carga modulos arquivo : V2__carga_modulos.sql
+[INFO] 2017-02-09 09:03:27,758 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-09 09:03:27,759 br.com.zurcs.executor.main.InitHelper printInit - 
+      _______  _______ ____ _   _ _____ ___  ____     ____ __  __ ____          _____                _ ____    
+     | ____\ \/ / ____/ ___| | | |_   _/ _ \|  _ \   / ___|  \/  |  _ \        |__  /   _ _ __ ___  ( ) ___|   
+     |  _|  \  /|  _|| |   | | | | | || | | | |_) | | |   | |\/| | | | |_____    / / | | | '__/ __| |/\___ \   
+     | |___ /  \| |__| |___| |_| | | || |_| |  _ <  | |___| |  | | |_| |_____|  / /| |_| | | | (__     ___) |  
+     |_____/_/\_\_____\____|\___/  |_| \___/|_| \_\  \____|_|  |_|____/        /____\__,_|_|  \___|   |____/   
+[DEBUG] 2017-02-09 09:03:28,828 br.com.zurcs.executor.business.ModuloManagerBean buscarTodos - Buscando todas entidades [br.com.zurcs.executor.persistencia.entidades.Modulo]
+[DEBUG] 2017-02-09 09:03:28,828 br.com.zurcs.executor.business.ModuloManagerBean getHqlParaBuscaEntidade - Hql de busca entidade: [select x from br.com.zurcs.executor.persistencia.entidades.Modulo x  order by nome]
+[INFO] 2017-02-09 09:03:36,905 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-09 09:03:37,008 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-09 09:03:37,010 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-09 09:03:37,051 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-09 09:03:37,504 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-09 09:03:37,536 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-09 09:03:38,198 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-09 09:03:38,198 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-09 09:03:38,199 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-09 09:03:38,222 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-09 09:03:38,359 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-09 09:03:38,432 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-09 09:03:38,473 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@953818e2 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@19ef53a2 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m9l1f63dpv0rd|2e54db99, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@bc2441e5 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m9l1f63dpv0rd|12bfd80d, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m9l1f63dpv0rd|277f7dd3, numHelperThreads -> 3 ]
+[INFO] 2017-02-09 09:03:38,800 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ebea12c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-09 09:03:38,891 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService - HHH000397: Using ASTQueryTranslatorFactory
+[INFO] 2017-02-09 09:03:39,150 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-09 09:03:39,161 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-09 09:03:39,254 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 2 migrations (execution time 00:00.049s)
+[INFO] 2017-02-09 09:03:39,287 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 2
+[INFO] 2017-02-09 09:03:39,288 org.flywaydb.core.internal.command.DbMigrate info - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] 2017-02-09 09:03:39,307 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-09 09:03:39,310 FlywayIntegrator logMigrate - Tasks de migração: 2 : carga modulos arquivo : V2__carga_modulos.sql
+[INFO] 2017-02-09 09:03:39,310 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-09 09:03:39,311 br.com.zurcs.executor.main.InitHelper printInit - 
+      _______  _______ ____ _   _ _____ ___  ____     ____ __  __ ____          _____                _ ____    
+     | ____\ \/ / ____/ ___| | | |_   _/ _ \|  _ \   / ___|  \/  |  _ \        |__  /   _ _ __ ___  ( ) ___|   
+     |  _|  \  /|  _|| |   | | | | | || | | | |_) | | |   | |\/| | | | |_____    / / | | | '__/ __| |/\___ \   
+     | |___ /  \| |__| |___| |_| | | || |_| |  _ <  | |___| |  | | |_| |_____|  / /| |_| | | | (__     ___) |  
+     |_____/_/\_\_____\____|\___/  |_| \___/|_| \_\  \____|_|  |_|____/        /____\__,_|_|  \___|   |____/   
+[DEBUG] 2017-02-09 09:03:40,313 br.com.zurcs.executor.business.ModuloManagerBean buscarTodos - Buscando todas entidades [br.com.zurcs.executor.persistencia.entidades.Modulo]
+[DEBUG] 2017-02-09 09:03:40,313 br.com.zurcs.executor.business.ModuloManagerBean getHqlParaBuscaEntidade - Hql de busca entidade: [select x from br.com.zurcs.executor.persistencia.entidades.Modulo x  order by nome]
+[DEBUG] 2017-02-09 09:03:42,983 br.com.zurcs.executor.business.ComandoManagerBean buscarPorQueryNomeada - Buscando entidades por Query Nomeada, Nome Query: [br.com.zurcs.executor.business.ComandoManagerBean.buscarPorModulo] - QueryParameter={idModulo=3}
+[INFO] 2017-02-09 09:03:44,726 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:03:44,736 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:03:44,833 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:03:45,982 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:03:45,982 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:03:46,121 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:03:47,058 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:03:47,058 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:03:47,156 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:03:47,796 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:03:47,808 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:03:47,902 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:04:23,170 org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: executorAmbienteCsPU
+	...]
+[INFO] 2017-02-09 09:04:23,281 org.hibernate.Version logVersion - HHH000412: Hibernate Core {5.2.6.Final}
+[INFO] 2017-02-09 09:04:23,284 org.hibernate.cfg.Environment <clinit> - HHH000206: hibernate.properties not found
+[INFO] 2017-02-09 09:04:23,337 org.hibernate.annotations.common.Version <clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO] 2017-02-09 09:04:23,807 org.hibernate.dialect.Dialect <init> - HHH000400: Using dialect: br.com.zurcs.executor.persistencia.hibernate.dialect.CustomH2Dialect
+[INFO] 2017-02-09 09:04:23,843 org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+[INFO] 2017-02-09 09:04:24,543 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:./database/executor
+[INFO] 2017-02-09 09:04:24,544 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001001: Connection properties: {user=root, password=****}
+[INFO] 2017-02-09 09:04:24,544 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001003: Autocommit mode: false
+[INFO] 2017-02-09 09:04:24,564 com.mchange.v2.log.MLog log - MLog clients using slf4j logging.
+[INFO] 2017-02-09 09:04:24,663 com.mchange.v2.c3p0.C3P0Registry log - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+[INFO] 2017-02-09 09:04:24,709 org.hibernate.c3p0.internal.C3P0ConnectionProvider configure - HHH10001007: JDBC isolation level: <unknown>
+[INFO] 2017-02-09 09:04:24,743 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource log - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f62a0283 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7ae13d43 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfsx9m9l2ex6f1ev3q|2e54db99, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@1d162b86 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9m9l2ex6f1ev3q|12bfd80d, jdbcUrl -> jdbc:h2:./database/executor, properties -> {user=******, password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfsx9m9l2ex6f1ev3q|277f7dd3, numHelperThreads -> 3 ]
+[INFO] 2017-02-09 09:04:25,061 org.hibernate.orm.connections.access getIsolatedConnection - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4ebea12c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[INFO] 2017-02-09 09:04:25,165 org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService - HHH000397: Using ASTQueryTranslatorFactory
+[INFO] 2017-02-09 09:04:25,486 org.flywaydb.core.internal.util.VersionPrinter info - Flyway 4.0.3 by Boxfuse
+[INFO] 2017-02-09 09:04:25,500 org.flywaydb.core.internal.dbsupport.DbSupportFactory info - Database: jdbc:h2:./database/executor (H2 1.4)
+[INFO] 2017-02-09 09:04:25,579 org.flywaydb.core.internal.command.DbValidate info - Successfully validated 2 migrations (execution time 00:00.036s)
+[INFO] 2017-02-09 09:04:25,626 org.flywaydb.core.internal.command.DbMigrate info - Current version of schema "PUBLIC": 2
+[INFO] 2017-02-09 09:04:25,628 org.flywaydb.core.internal.command.DbMigrate info - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] 2017-02-09 09:04:25,654 FlywayIntegrator logMigrate - Tasks de migração: 1 : << Flyway Baseline >> arquivo : << Flyway Baseline >>
+[INFO] 2017-02-09 09:04:25,654 FlywayIntegrator logMigrate - Tasks de migração: 2 : carga modulos arquivo : V2__carga_modulos.sql
+[INFO] 2017-02-09 09:04:25,654 FlywayIntegrator integrate - ************** Finalizando migrações do Flyway DB
+[INFO] 2017-02-09 09:04:25,655 br.com.zurcs.executor.main.InitHelper printInit - 
+      _______  _______ ____ _   _ _____ ___  ____     ____ __  __ ____          _____                _ ____    
+     | ____\ \/ / ____/ ___| | | |_   _/ _ \|  _ \   / ___|  \/  |  _ \        |__  /   _ _ __ ___  ( ) ___|   
+     |  _|  \  /|  _|| |   | | | | | || | | | |_) | | |   | |\/| | | | |_____    / / | | | '__/ __| |/\___ \   
+     | |___ /  \| |__| |___| |_| | | || |_| |  _ <  | |___| |  | | |_| |_____|  / /| |_| | | | (__     ___) |  
+     |_____/_/\_\_____\____|\___/  |_| \___/|_| \_\  \____|_|  |_|____/        /____\__,_|_|  \___|   |____/   
+[DEBUG] 2017-02-09 09:04:26,512 br.com.zurcs.executor.business.ModuloManagerBean buscarTodos - Buscando todas entidades [br.com.zurcs.executor.persistencia.entidades.Modulo]
+[DEBUG] 2017-02-09 09:04:26,512 br.com.zurcs.executor.business.ModuloManagerBean getHqlParaBuscaEntidade - Hql de busca entidade: [select x from br.com.zurcs.executor.persistencia.entidades.Modulo x  order by nome]
+[DEBUG] 2017-02-09 09:04:29,143 br.com.zurcs.executor.business.ComandoManagerBean buscarPorQueryNomeada - Buscando entidades por Query Nomeada, Nome Query: [br.com.zurcs.executor.business.ComandoManagerBean.buscarPorModulo] - QueryParameter={idModulo=3}
+[INFO] 2017-02-09 09:04:30,781 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:04:30,782 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:04:30,878 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:04:32,340 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:04:32,341 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:04:32,477 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:04:33,181 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:04:33,181 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:04:33,274 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:04:33,828 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:04:33,829 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:04:33,945 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:04:34,380 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:04:34,381 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:04:34,458 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
+[INFO] 2017-02-09 09:04:34,930 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Starting for "JAVA_VERSION"
+[INFO] 2017-02-09 09:04:34,930 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - 
+
+> java -version
+[INFO] 2017-02-09 09:04:35,038 br.com.zurcs.executor.business.ExecutorManagerBean executeInNewThread - >>>>>>>>>>>>>>>>>>>[COMMAND EXEC] Finished for "JAVA_VERSION" in 0 Seconds
