@@ -150,12 +150,6 @@ public class TarefasOverviewController {
 
 		final Image imagePlay = new Image(ResourceController.getInputStream("imagens/play2_48x48.png"));
 
-		ImageView imageView = new ImageView(imagePlay);
-
-		imageView.setFitHeight(12);
-
-		imageView.setFitWidth(12);
-
 		final Callback<TableColumn<Comando, String>, TableCell<Comando, String>> cellFactory = new Callback<TableColumn<Comando, String>, TableCell<Comando, String>>() {
 
 			@Override
@@ -163,7 +157,7 @@ public class TarefasOverviewController {
 
 				final TableCell<Comando, String> cell = new TableCell<Comando, String>() {
 
-					final Button btnExcluir = new Button("", imageView);
+					final Button btnExecutar = new Button("", getPlayIcon(imagePlay));
 
 					@Override
 					public void updateItem(final String item, final boolean empty) {
@@ -177,8 +171,8 @@ public class TarefasOverviewController {
 							this.setText(null);
 
 						} else {
-							this.btnExcluir.setOnAction((final ActionEvent event) -> {
-
+							this.btnExecutar.setOnAction((final ActionEvent event) -> {
+								
 								final Optional<ButtonType> result = AlertUtils.alertaConfirmacao();
 
 								if (result.get() == ButtonType.OK) {
@@ -187,9 +181,9 @@ public class TarefasOverviewController {
 
 										final Comando comando = this.getTableView().getItems().get(this.getIndex());
 
-										executorManager.execute(comando);
+										//TODO ponto que envia para execução, verificar se tem como abrir em modal com printstack do console
+										executorManager.executeInTextArea(comando);
 
-										AlertUtils.alert("Sua solicitação foi encaminhada para uma nova janela do seu Terminal.", "Sucesso!", "Tarefa enviada para execução.", AlertType.INFORMATION);
 									} catch (final Exception e) {
 
 										AlertUtils.alert(e);
@@ -198,7 +192,7 @@ public class TarefasOverviewController {
 								}
 
 							});
-							this.setGraphic(this.btnExcluir);
+							this.setGraphic(this.btnExecutar);
 							this.setText(null);
 						}
 					}
@@ -209,6 +203,15 @@ public class TarefasOverviewController {
 
 		acaoColumn.setCellFactory(cellFactory);
 
+	}
+
+	private ImageView getPlayIcon(final Image imagePlay) {
+		ImageView imageView = new ImageView(imagePlay);
+
+		imageView.setFitHeight(12);
+
+		imageView.setFitWidth(12);
+		return imageView;
 	}
 
 	private void listarAcoes(Modulo modulo) {

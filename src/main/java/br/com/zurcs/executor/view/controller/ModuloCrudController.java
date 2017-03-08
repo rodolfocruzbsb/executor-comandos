@@ -179,6 +179,8 @@ public class ModuloCrudController {
 			this.modulo.setComandos(this.comandosTable.getItems());
 
 			this.moduloManager.salvar(this.modulo);
+			
+			this.mainApp.showTarefasOverview();
 
 		} catch (final Exception e) {
 

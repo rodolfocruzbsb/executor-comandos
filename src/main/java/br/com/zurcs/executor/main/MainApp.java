@@ -76,6 +76,7 @@ public class MainApp extends Application {
 
 			loader.setLocation(ResourceController.getUrl("view/TarefasOverview.fxml"));
 
+			// FIXME error when call this method multiple times
 			final AnchorPane tarefasOverview = (AnchorPane) loader.load();
 
 			this.rootLayout.setCenter(tarefasOverview);

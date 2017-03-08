@@ -4,6 +4,8 @@ import br.com.zurcs.executor.persistencia.entidades.Comando;
 
 public interface ExecutorManager {
 
-	public void execute(Comando comando);
+	public void executeInTextArea(Comando comando);
+
+	void execute(Comando comando);
 
 }
